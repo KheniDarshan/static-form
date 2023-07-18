@@ -1,13 +1,71 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #5d6675;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contain {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  background-color: lightgray;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 16px;
+}
+
+.header-title {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+  padding: 16px;
+}
+
+.header-description {
+  margin: 0;
+  padding: 16px;
+}
+
+.required-text {
+  color: red;
+  margin: 0;
+  margin-bottom: 0;
+  padding: 16px;
+}
+
+.input-title {
+  margin-top: 0;
+  margin-bottom: 30px
+}
+
+.subBox {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.input-filed {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 50%;
+}
+
+.input-filed:focus{
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.button-group {
+  padding: 24px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  width: 100%;
+  max-width: 100px;
+  padding: 6px 0;
+  border-radius: 8px;
+  border: 0;
 }
