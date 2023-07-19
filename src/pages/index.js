@@ -7,7 +7,6 @@ const GradForm = () => {
   const formData = {
     email: '',
     fname: '',
-    emoryEmail: '',
     rotationInterested: '',
     anythingLike: '',
   }
@@ -29,7 +28,7 @@ const GradForm = () => {
   const submit = async (e) => {
     e.preventDefault();
     if (validEmail.test(data?.email)) {
-      if (data?.emoryEmail.length && data?.fname.length && data?.rotationInterested.length && call?.length) {
+      if (data?.fname.length && data?.rotationInterested.length && call?.length) {
         const response = await fetch(
           'https://static-form-d48b0-default-rtdb.firebaseio.com/my-data.json',
           {
@@ -74,17 +73,6 @@ const GradForm = () => {
         <form ref={form} onSubmit={submit}>
 
           <Input
-            type="email"
-            name="email"
-            placeholder="Your email"
-            value={data?.email}
-            onChange={setHendler}
-            required={true}
-            longInput={false}
-            title="Email"
-          />
-
-          <Input
             type="text"
             name="fname"
             placeholder="Your answer"
@@ -96,10 +84,10 @@ const GradForm = () => {
           />
 
           <Input
-            type="text"
-            name="emoryEmail"
-            placeholder="Your answer"
-            value={data?.emoryEmail}
+            type="email"
+            name="email"
+            placeholder="Your email"
+            value={data?.email}
             onChange={setHendler}
             required={true}
             longInput={false}
